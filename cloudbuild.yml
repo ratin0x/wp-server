@@ -4,4 +4,4 @@ steps:
   args: ['up', '-d']
 - name: 'eu.gcr.io/cloud-builders/docker'
   args: ['tag', 'workspace_app:latest', 'eu.gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
-images: ['eu.gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
+  images: ['eu.gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
